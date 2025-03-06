@@ -1,5 +1,7 @@
 package com.devsuperior.dsmeta.controllers;
 
+import com.devsuperior.dsmeta.dto.SaleReportDTO;
+import com.devsuperior.dsmeta.dto.SaleSummaryDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,13 +26,13 @@ public class SaleController {
 	}
 
 	@GetMapping(value = "/report")
-	public ResponseEntity<?> getReport() {
+	public ResponseEntity<SaleReportDTO> getReport() {
 		// TODO
 		return null;
 	}
 
 	@GetMapping(value = "/summary")
-	public ResponseEntity<?> getSummary() {
+	public ResponseEntity<SaleSummaryDTO> getSummary() {
 		// TODO
 		return null;
 	}
