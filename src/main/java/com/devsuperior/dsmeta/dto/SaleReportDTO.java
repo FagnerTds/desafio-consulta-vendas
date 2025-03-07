@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class SaleReportDTO {
 
-    private Long Id;
+    private Long id;
     private LocalDate date;
     private Double amount;
     private String name;
@@ -15,21 +15,21 @@ public class SaleReportDTO {
     }
 
     public SaleReportDTO(Long id, LocalDate date, Double amount, String name) {
-        Id = id;
+        this.id = id;
         this.date = date;
         this.amount = amount;
         this.name = name;
     }
 
     public SaleReportDTO(Sale entity) {
-        Id = entity.getId();
+        id = entity.getId();
         date = entity.getDate();
         amount = entity.getAmount();
         name = entity.getSeller().getName();
     }
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public LocalDate getDate() {
